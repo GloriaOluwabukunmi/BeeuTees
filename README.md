@@ -2,6 +2,22 @@
 
 ### Project Title; Join and Unjoin
 
+[Project overview](#project-overview)
+
+Data sources
+
+Tools Used
+
+Data Cleaning and Preparation
+
+Exploratory Data Analysis
+
+Data Analysis
+
+Data Visualization
+
+
+
 ### Project overview (introduction about the project)
 ---
 SQL is an important tool every data analyst must know how to use, it has various function
@@ -42,5 +58,13 @@ EDA involved the exploring of the Data to answer some questions about the Data s
   WHERE CONDITION = TRUE
   ```
 ### Data Visualization
+
+😆
+💻
+
+|Heading 1|Heading 2|Heading 3| 
+|---------|--------|----------|
+|Table 1|Table 2|Table 3|
+
 
   
