@@ -70,6 +70,29 @@ SUN, AVERAGE
 - for Portfolio Building
 
   ### DATA ANALYSIS
+- Region	by average subscription duration
+
+![image](https://github.com/user-attachments/assets/feb2dda6-82b9-4a67-81e4-2bfa086e744c)
+
+
+- Sum of Duration by Subscription Type
+
+![image](https://github.com/user-attachments/assets/1551aa88-0f9a-48c9-acfa-f69ae461ad5b)
+
+
+
+- Sum of Duration	Count of Region by Canceled
+		
+![image](https://github.com/user-attachments/assets/580050fd-037d-40a4-bc06-a4ce11867a6f)
+
+
+
+
+- Count of Region	Average of Duration by Average of Revenue	and Subscription Type
+			
+![image](https://github.com/user-attachments/assets/26688ef0-7432-49bb-ae76-81182641e931)
+
+
 - TOTAL NUMBER OF CUSTOMERS FROM EACH REGION
 ```SQL
 SELECT Region, COUNT(*) AS total_customers
