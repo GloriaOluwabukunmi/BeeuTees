@@ -1,60 +1,133 @@
-## LITA PROJECT 2
+## LITA PROJECT 2 
 
-### PROJECT ANALYSIS ON CUSTOMERS DATA ON A RETAIL STORE
+### PROJECT ANALYSIS ON CUSTOMERS DATA OF A RETAIL STORE
 
-[Project overview](#project-overview)
+[PROJECT OVERVIEW](#project-overview)
 
-[Data sources](#data-sources)
+[DATA SOURCE](#data-source)
 
-[Tools Used](#tools-used)
+[DATA COLLECTED](data-collected)
 
-[Data Cleaning and Preparation](#data-cleaningandpreparation)
+[PROJECT OBJECTIVE](project-objective)
 
-[Exploratory Data Analysis](#exploratory-data-analysis)
+[KEY METRICS](key-mertics)
 
-[Data Analysis](#data-analysis)
+[FUNCTIONS USED IN EXCEL](functions-used-in-excel)
 
-[Data Visualization](#data-visualization)
+[TOOLS AND METHOD](#tools-and-method)
+
+[DATA ANALYSIS](#data-analysis)
+
+[DATA VISUALIZATION](#data-visualization)
 
 
 
-### Project overview (introduction about the project)
-This project is to analyze the Customers Data on a retail store
+### PROJECT OVERVIEW
+This project is to analyze the Customers Data on a retail store, analyzing the subscription pattern for customers in each region
 
-### Data sources
+### DATA SOURCE
 ---
 The primary sources of Data used here was provided by the company
-### Tools Used
----
-1 Microsoft Excel [Download Here](https://www.microsoft.com)
-- for data cleaning amd analysing for data analysis
-- for data visualization
-     
-- SQL- Structured Query Language for querying of Data
-- GitHub for Portfolio Building
+### DATA COLLECTED
+The Dataset includes the following key columns
+- CustomerID
+- CustomerName
+- Region
+- SubscriptionType
+- SubscriptionStart
+- SubscriptionEnd
+- Canceled
+- Revenue
 
-### Data Cleaning and Preparation
+### PROJECT OBJECTIVE
 ---
-In the initial phase of the Data Cleaning and Preparation, we perform the following action;
-  1. Data loading and inspection
-  2. Handling missing variables
-  3. Data cleaning and formatting
+This project was designed to address the following analysis goals
+- Analyze customer data in order to detect their subscription pattern 
+- Calculate the average subscription duration and identify the most popular subscription type
+- Retrieve total number of customer in each region
+- Analyze customer who canceled their subscription within 6 months
+- Average subscription duration for all customers
+- Customers with subscription longer than 12 months 
+- Total revenue by subscription type
+- Top 3 region by subscription cancellation
+- Total number of active and canceled subscription
 
-### Exploratory Data Analysis
----
-EDA involved the exploring of the Data to answer some questions about the Data such as;
-- What is the overall sales trend
-- Which product are top sellers
-- What are the poducts on peak sales
+### KEY METRICS
+- Subscription Duration for each customer
+- Subscription Type for each customer
 
-  ### Data Analysis
-  ---
-  This is where we include some basic lines of code or even some of the  DAX expression uded during my analysis;
-  ```SQL
-  SELECT * FROM TABLE 1
-  WHERE CONDITION = TRUE
-  ```
-### Data Visualization
+### FUNCTIONS USED IN EXCEL
+SUN, AVERAGE
+
+### TOOLS AND METHOD
+1. Microsoft Excel [Download Here](https://www.microsoft.com)
+- for data cleaning and formatting
+2. SQL (Structured Query Language)
+- for querying and writing basic lines of codes
+3. Powerbi
+- for data visualization 
+4. GitHub
+- for Portfolio Building
+
+  ### DATA ANALYSIS
+- TOTAL NUMBER OF CUSTOMERS FROM EACH REGION
+```SQL
+SELECT Region, COUNT(*) AS total_customers
+FROM CustomerData$
+GROUP BY Region
+```
+
+- MOST POPULAR SUBSCRIPTION TYPE BY NUMBER OF CUSTOMERS
+```SQL
+SELECT SubscriptionType, COUNT(*) AS total_customers
+FROM CustomerData$
+GROUP BY SubscriptionType
+ORDER BY total_customers Desc
+```
+
+- CUSTOMERS WHO CANCELLED THEIR SUBSCRIPTION WITHIN 6 MONTHS
+```SQL
+SELECT * FROM CustomerData$
+WHERE Canceled IS NOT NULL
+AND Canceled >= DATEADD (MONTH, -6, GETDATE());
+```
+- AVERAGE SUBSCRIPTION DURATION FOR ALL CUSTOMERS
+```SQL
+SELECT AVG(DATEDIFF(MONTH, SubscriptionStart,
+coalesce(canceled, GETDATE()))) AS AVERAGE_DURATION
+FROM [dbo].[CustomerData$]
+```
+- SUBSCRIPTION LONGER THAN 12 MONTHS
+```SQL
+SELECT * FROM  [dbo].[CustomerData$]
+WHERE DATEDIFF(MONTH, SubscriptionStart,
+COALESCE(Canceled, GETDATE())) >12;
+```
+- TOTAL REVENUE BY SUBSCRIPTION TYPE
+```SQL
+SELECT [SubscriptionType], 
+SUM(Revenue) as revenue 
+from [dbo].[CustomerData$]
+GROUP BY [SubscriptionType]
+```
+- TOP 3 REGIONS BY SUBSCRIPTION CANCELLATION
+```SQL
+SELECT TOP 3 Region, COUNT(*) AS Canceled
+FROM [dbo].[CustomerData$]
+WHERE [Canceled] IS NOT NULL
+GROUP BY [Region]
+ORDER BY [Canceled] DESC
+```
+- TOTAL NUMBER OF ACTIVE AND CANCELLED SUBSCRIPTION TYPE
+```SQL
+SELECT [SubscriptionType]
+COUNT([CustomerID]) AS total
+FROM [SubscriptionType]
+WHERE [SubscriptionType] IN [Canceled]
+GROUP BY [SubscriptionType]
+```
+
+### DATA VISUALIZATION
 
 😆
 💻
