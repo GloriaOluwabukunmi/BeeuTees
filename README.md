@@ -1,6 +1,6 @@
-# BeeuTees
+## LITA PROJECT 2
 
-### Project Title; Join and Unjoin
+### PROJECT ANALYSIS ON CUSTOMERS DATA ON A RETAIL STORE
 
 [Project overview](#project-overview)
 
@@ -19,19 +19,16 @@
 
 
 ### Project overview (introduction about the project)
----
-SQL is an important tool every data analyst must know how to use, it has various function
+This project is to analyze the Customers Data on a retail store
 
 ### Data sources
 ---
-The primary sources of Data used here is Data sale.csv and this is an open source data that can be freely downloaded from an open sources oniline such as kaggle or FRED or any other data repository site.
-
+The primary sources of Data used here was provided by the company
 ### Tools Used
 ---
-- Microsoft Excel [Download Here](https://www.microsoft.com)
-  1. for data cleaning
-  2. for data analysis
-  3. for data visualization
+1 Microsoft Excel [Download Here](https://www.microsoft.com)
+- for data cleaning amd analysing for data analysis
+- for data visualization
      
 - SQL- Structured Query Language for querying of Data
 - GitHub for Portfolio Building
