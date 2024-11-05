@@ -70,7 +70,9 @@ SUN, AVERAGE
 - for Portfolio Building
 
   ### DATA ANALYSIS
-- Region	by average subscription duration
+  #### DATA VISUALIZATION WITH PIVOT TABLE
+  
+- Region by average subscription duration
 
 ![image](https://github.com/user-attachments/assets/feb2dda6-82b9-4a67-81e4-2bfa086e744c)
 
@@ -81,16 +83,18 @@ SUN, AVERAGE
 
 
 
-- Sum of Duration	Count of Region by Canceled
+- Sum of Duration Count of Region by Canceled
 		
 ![image](https://github.com/user-attachments/assets/580050fd-037d-40a4-bc06-a4ce11867a6f)
 
 
 
 
-- Count of Region	Average of Duration by Average of Revenue	and Subscription Type
+- Count of Region Average of Duration by Average of Revenue and Subscription Type
 			
 ![image](https://github.com/user-attachments/assets/26688ef0-7432-49bb-ae76-81182641e931)
+
+
 
 
 - TOTAL NUMBER OF CUSTOMERS FROM EACH REGION
@@ -143,14 +147,26 @@ ORDER BY [Canceled] DESC
 ```
 - TOTAL NUMBER OF ACTIVE AND CANCELLED SUBSCRIPTION TYPE
 ```SQL
-SELECT [SubscriptionType]
-COUNT([CustomerID]) AS total
-FROM [SubscriptionType]
-WHERE [SubscriptionType] IN [Canceled]
-GROUP BY [SubscriptionType]
+SELECT 
+SUM(CASE WHEN Canceled = 0 THEN 1 ELSE 0 END) AS ActiveSubscriptions,
+SUM(CASE WHEN Canceled = 1 THEN 1 ELSE 0 END) AS CanceledSubscriptions
+FROM [dbo].[CustomerData$]
+GROUP BY CustomerID
 ```
 
-### DATA VISUALIZATION
+
+### DATA VISUALIZATION WITH POWERBI DASHBOARD
+![Screenshot 2024-11-05 062742](https://github.com/user-attachments/assets/0ca55ade-6bfc-4614-a3ca-c5c276caf2a8)
+
+
+
+![Screenshot 2024-11-05 062812](https://github.com/user-attachments/assets/b18fb7e6-ed19-4dc3-ac4c-6303d25ef0ec)
+
+
+
+![Screenshot 2024-11-05 062848](https://github.com/user-attachments/assets/a22e5ffa-db41-4c35-b67c-bdb19deef5fd)
+
+
 
 😆
 💻
