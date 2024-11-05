@@ -22,10 +22,12 @@
 
 [DATA VISUALIZATION WITH PIVOT TABLE](#data-visualization-with-pivot-table)
 
+[OVERALL INFERENCE](#overall-inference)
 
 
 ### PROJECT OVERVIEW
-This project is to analyze the Customers Data on a retail store, analyzing the subscription pattern for customers in each region
+This data analysis provides the retail store with valuable insights into its customer base, subscription patterns, and revenue streams. These insights can inform strategic decisions to optimize the business, improve customer satisfaction, and drive long-term growth.
+
 
 ### DATA SOURCE
 ---
@@ -165,4 +167,24 @@ GROUP BY CustomerID
 ![Screenshot 2024-11-04 200053](https://github.com/user-attachments/assets/eba3cd90-e4ee-481e-93f1-b12c8f138a5a)
 
 
+### OVERALL INFERENCE
 
+- Customer Subscription Patterns:
+The analysis shows that the retail store has customers across different regions with varying subscription types.
+The most popular subscription type can be identified, which could help the store tailor its offerings to meet customer preferences.
+Analyzing the average subscription duration and identifying customers with long-term (>12 months) subscriptions provides insights into customer loyalty.
+
+
+- Subscription Cancellations:
+Identifying customers who canceled their subscriptions within 6 months highlights potential pain points that need to be addressed.
+Knowing the top 3 regions with the highest subscription cancellations can help the store focus its efforts on improving customer retention in those areas.
+
+
+- Revenue Analysis:
+Calculating the total revenue by subscription type gives the store a better understanding of which offerings are most profitable.
+Tracking the ratio of active to canceled subscriptions can help the store monitor the health of its customer base.
+
+
+- Opportunities for Improvement:
+The analysis reveals areas where the store can focus its efforts to improve customer satisfaction and retention, such as understanding why customers cancel within 6 months or tailoring its offerings to the most popular subscription type.
+Identifying regions with high subscription cancellations can help the store target its customer service and retention strategies more effectively.
