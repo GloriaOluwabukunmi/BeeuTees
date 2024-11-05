@@ -16,9 +16,11 @@
 
 [TOOLS AND METHOD](#tools-and-method)
 
-[DATA ANALYSIS](#data-analysis)
+[DATA VISUALIZATION WITH PIVOT TABLE](data-visualization-with-pivot-table)
 
-[DATA VISUALIZATION](#data-visualization)
+[SQL QUERIES FOR CUSTOMER DATA](#sql-queries-for-customer-data)
+
+[DATA VISUALIZATION WITH PIVOT TABLE](#data-visualization-with-pivot-table)
 
 
 
@@ -95,7 +97,7 @@ SUN, AVERAGE
 ![image](https://github.com/user-attachments/assets/26688ef0-7432-49bb-ae76-81182641e931)
 
 
-
+### SQL QUERIES FOR CUSTOMER DATA
 
 - TOTAL NUMBER OF CUSTOMERS FROM EACH REGION
 ```SQL
@@ -156,17 +158,11 @@ GROUP BY CustomerID
 
 
 ### DATA VISUALIZATION WITH POWERBI DASHBOARD
-![Screenshot 2024-11-05 062742](https://github.com/user-attachments/assets/0ca55ade-6bfc-4614-a3ca-c5c276caf2a8)
+![Screenshot 2024-11-04 195900](https://github.com/user-attachments/assets/41f20ec8-0348-45ea-8138-6d6675ca2f3d)
 
+![Screenshot 2024-11-04 195933](https://github.com/user-attachments/assets/5d891e2c-9db2-4630-a8de-db2707bc33fb)
 
-
-![Screenshot 2024-11-05 062812](https://github.com/user-attachments/assets/b18fb7e6-ed19-4dc3-ac4c-6303d25ef0ec)
-
-
-
-![Screenshot 2024-11-05 062848](https://github.com/user-attachments/assets/a22e5ffa-db41-4c35-b67c-bdb19deef5fd)
-
-
+![Screenshot 2024-11-04 200053](https://github.com/user-attachments/assets/eba3cd90-e4ee-481e-93f1-b12c8f138a5a)
 
 😆
 💻
