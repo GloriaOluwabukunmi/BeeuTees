@@ -10,7 +10,7 @@
 
 [PROJECT OBJECTIVE](#project-objective)
 
-[KEY METRICS](#key-mertics)
+[KEY METRICS](#key-metrics)
 
 [FUNCTIONS USED IN EXCEL](#functions-used-in-excel)
 
@@ -20,7 +20,7 @@
 
 [SQL QUERIES FOR CUSTOMER DATA](#sql-queries-for-customer-data)
 
-[DATA VISUALIZATION WITH PIVOT TABLE](#data-visualization-with-pivot-table)
+[DATA VISUALIZATION WITH POWERBI DASHBOARD](#data-visualization-with-powerbi-dashboard)
 
 [OVERALL INFERENCE](#overall-inference)
 
