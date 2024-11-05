@@ -6,17 +6,17 @@
 
 [DATA SOURCE](#data-source)
 
-[DATA COLLECTED](data-collected)
+[DATA COLLECTED](#data-collected)
 
-[PROJECT OBJECTIVE](project-objective)
+[PROJECT OBJECTIVE](#project-objective)
 
-[KEY METRICS](key-mertics)
+[KEY METRICS](#key-mertics)
 
-[FUNCTIONS USED IN EXCEL](functions-used-in-excel)
+[FUNCTIONS USED IN EXCEL](#functions-used-in-excel)
 
 [TOOLS AND METHOD](#tools-and-method)
 
-[DATA VISUALIZATION WITH PIVOT TABLE](data-visualization-with-pivot-table)
+[DATA VISUALIZATION WITH PIVOT TABLE](#data-visualization-with-pivot-table)
 
 [SQL QUERIES FOR CUSTOMER DATA](#sql-queries-for-customer-data)
 
@@ -164,6 +164,5 @@ GROUP BY CustomerID
 
 ![Screenshot 2024-11-04 200053](https://github.com/user-attachments/assets/eba3cd90-e4ee-481e-93f1-b12c8f138a5a)
 
-😆
-💻
+
 
