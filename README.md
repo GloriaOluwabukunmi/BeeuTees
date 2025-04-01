@@ -188,3 +188,4 @@ Tracking the ratio of active to canceled subscriptions can help the store monito
 - Opportunities for Improvement:
 The analysis reveals areas where the store can focus its efforts to improve customer satisfaction and retention, such as understanding why customers cancel within 6 months or tailoring its offerings to the most popular subscription type.
 Identifying regions with high subscription cancellations can help the store target its customer service and retention strategies more effectively.
+
